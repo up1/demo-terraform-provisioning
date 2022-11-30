@@ -5,7 +5,7 @@
 $terraform init
 $terraform validate
 
-$terraform apply -var="do_token=your-do-token" -var="your_ssh_key=your-public-key"
+$terraform apply -var="do_token=your-do-token"
 
 
 $terraform destroy -var="do_token=your-do-token"
