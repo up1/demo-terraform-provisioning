@@ -22,3 +22,4 @@ runcmd:
   - sudo rm /var/www/html/index.html
   - sudo mv index.html /var/www/html
   - sudo systemctl restart apache2
+  - sudo systemctl restart apache2

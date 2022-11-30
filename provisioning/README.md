@@ -1,6 +1,5 @@
 # Workshop :: provisioning server and deploy app
 * [DigitalOcean Provider](https://registry.terraform.io/providers/digitalocean/digitalocean/latest)
-* ReactJS with Docker
 
 ```
 $terraform init
