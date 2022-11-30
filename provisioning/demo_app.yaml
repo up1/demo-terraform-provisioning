@@ -1,3 +1,4 @@
+#cloud-config
 groups:
   - ubuntu: [root,sys]
   - demo_group
@@ -12,7 +13,7 @@ users:
     groups: users, admin
     lock_passwd: false
     ssh_authorized_keys:
-      - ssh-rsa <public key>
+      - your public key
 
 runcmd:
   - sudo apt-get update
@@ -20,5 +21,4 @@ runcmd:
   - sudo curl https://raw.githubusercontent.com/up1/demo-terraform-provisioning/main/app/index.html -O
   - sudo rm /var/www/html/index.html
   - sudo mv index.html /var/www/html
-  - sudo ufw allow 80/tcp
   - sudo systemctl restart apache2
