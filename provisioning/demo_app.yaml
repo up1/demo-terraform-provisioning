@@ -1,3 +1,4 @@
+#cloud-config
 groups:
   - ubuntu: [root,sys]
   - demo_group
